@@ -17,4 +17,4 @@ Wykorzystany sprzet:
 --------------------------------------------
 
 ###Zadanie 2a
-
+Import zbioru danych do bazy Mongodb
