@@ -18,4 +18,7 @@ Wykorzystany sprzet:
 --------------------------------------------
 
 ###Zadanie 2a
-Import zbioru danych do bazy Mongodb
+Import pliku bazy danych do bazy Mongodb
+```sh
+time bunzip2 -c RC_2015-01.bz2 | mongoimport --drop --host 127.0.0.1 -d test -c reddit
+```
