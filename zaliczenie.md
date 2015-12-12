@@ -9,6 +9,7 @@ Wykorzystany sprzet:
 | Dysk                  | SSD 128 GB                   |
 | System operacyjny     | Linux Ubuntu Gnome 14.04.3   |
 | Typ systemu           | 64 - bit                     |
+| Model komputera       | Ultrabook DELL XPS 14        |
 
 |Użyte programy|Wersja|
 |---------|-----------|
