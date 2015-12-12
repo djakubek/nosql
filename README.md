@@ -1,4 +1,4 @@
-Daniel Jakubek
+Daniel Jakubek, k.a.s.z.u.b@hotmail.com
 -------------------------------------------
 Rozwiązania zadań z przedmiotu *Bazy NoSQL*:
 
