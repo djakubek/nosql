@@ -24,4 +24,7 @@ Rozpakowywanie pliku RC_2015-01.bz2 wraz z importem do bazy danych Mongodb
 time bunzip2 -c RC_2015-01.bz2 | mongoimport --drop --host 127.0.0.1 -d test -c reddit
 ```
 Zużycie zasobów:
-![import](czas_importu_mongodb.png)
+
+![zasoby import](zasoby_import.png)
+
+![czas importu](czas_importu_mongodb.png)
