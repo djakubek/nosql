@@ -34,6 +34,6 @@ Zużycie zasobów (procesora, RAM'u, Sieci, Dysku):
 Czas poświęcony na wykonanie importu bazy danych do mongodb
 ![czas importu](czas_importu_mongodb.png)
 
-Rozmiar pliku po zaimportowaniu 53,7 GB
+Rozmiar plików po zaimportowaniu 53,7 GB
 
 ###Zadanie 2b
