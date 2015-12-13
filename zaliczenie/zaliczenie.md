@@ -5,7 +5,7 @@ Wykorzystany sprzet:
 |X|Informacje o komputerze                             |
 |-----------------------|------------------------------|
 | Procesor              | Intel Core i7-3687U 2.60 GHz |
-| Ilość rdzeni          | 4                            |
+| Ilość rdzeni          | 2 fizyczne, 4 logiczne       |
 | Pamięć                | 7,88 GB                      |
 | Dysk                  | SSD 128 GB                   |
 | System operacyjny     | Linux Ubuntu Gnome 14.04.3   |
