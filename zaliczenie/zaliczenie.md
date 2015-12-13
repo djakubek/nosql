@@ -19,9 +19,7 @@ Wykorzystany sprzet:
 |Postgres |           |
 --------------------------------------------
 
-###Zadanie 2a
-
-##Mongodb
+###Zadanie 2a - Mongodb
 ---------------------------------------------
 Rozpakowywanie pliku RC_2015-01.bz2 (**rozmiar : 5,5 GB (5452413560 bajtów)**) wraz z importem do bazy danych Mongodb
 ```sh
@@ -37,7 +35,8 @@ Czas poświęcony na wykonanie importu bazy danych do mongodb
 
 Rozmiar plików po zaimportowaniu 53,7 GB
 
-##Postgres
+###Zadanie 2a - Postgres
 -----------------------------------------------------------------
 
-###Zadanie 2b
+###Zadanie 2b - Mongodb
+----------------------------------------------------------------
