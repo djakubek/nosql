@@ -14,6 +14,7 @@ Wykorzystany sprzet:
 
 |Użyte programy|Wersja|
 |---------|-----------|
+|Bunzip2  | 1.0.6     |
 |Mongodb  | 3.0.7     |
 |Postgres |           |
 --------------------------------------------
