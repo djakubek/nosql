@@ -12,11 +12,11 @@ Wykorzystany sprzet:
 | Typ systemu           | 64 - bit                     |
 | Model komputera       | Ultrabook DELL XPS 14        |
 
-|Użyte programy|Wersja|
-|---------|-----------|
-|Bunzip2  | 1.0.6     |
-|Mongodb  | 3.0.7     |
-|Postgres |           |
+| Użyte programy        | Wersja                       |
+|-----------------------|------------------------------|
+| Bunzip2               | 1.0.6                        |
+| Mongodb               | 3.0.7                        |
+| Postgres              |                              |
 
 
 ###Zadanie 2a - Mongodb
