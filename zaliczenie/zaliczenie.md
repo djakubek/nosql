@@ -21,7 +21,7 @@ Wykorzystany sprzet:
 
 ###Zadanie 2a - Mongodb
 ---------------------------------------------
-Rozpakowywanie pliku RC_2015-01.bz2 (**rozmiar : 5,5 GB (5452413560 bajtów)**) wraz z importem do bazy danych Mongodb
+Rozpakowywanie pliku RC_2015-01.bz2 (**rozmiar : 5,5 GB (5452413560 bajtów)**) wraz z importem do bazy danych
 ```sh
 time bunzip2 -c RC_2015-01.bz2 | mongoimport --drop --host 127.0.0.1 -d test -c reddit
 ```
@@ -30,7 +30,7 @@ Zużycie zasobów (procesora, RAM'u, Sieci, Dysku):
 ![zasoby import](zasoby_import.png)
 ![disk read](disk_read.png)
 
-Czas poświęcony na wykonanie importu bazy danych do mongodb
+Czas poświęcony na wykonanie importu bazy danych
 ![czas importu](czas_importu_mongodb.png)
 
 Rozmiar plików po zaimportowaniu 53,7 GB
