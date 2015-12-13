@@ -13,7 +13,7 @@ Wykorzystany sprzet:
 
 |Użyte programy|Wersja|
 |---------|-----------|
-|Mongodb  |           |
+|Mongodb  | 3.0.7     |
 |Postgres |           |
 --------------------------------------------
 
