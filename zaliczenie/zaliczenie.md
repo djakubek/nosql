@@ -28,5 +28,6 @@ Zużycie zasobów(procesora, RAM'u, Sieci, Dysku):
 
 ![zasoby import](zasoby_import.png)
 ![disk read](disk_read.png)
+
 Czas poświęcony na wykonanie importu bazy danych do mongodb
 ![czas importu](czas_importu_mongodb.png)
