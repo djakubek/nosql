@@ -33,7 +33,7 @@ Zużycie zasobów (procesora, RAM'u, Sieci, Dysku):
 Czas poświęcony na wykonanie importu bazy danych
 ![czas importu](czas_importu_mongodb.png)
 
-Rozmiar plików po zaimportowaniu 53,7 GB
+Rozmiar plików bazy danych po zaimportowaniu 53,7 GB
 
 ###Zadanie 2a - Postgres
 -----------------------------------------------------------------
@@ -45,6 +45,7 @@ Zliczenie zainportowanych rekordów
 ```sh
 db.reddit.count()
 ```
+Iość zaimportowanych dokumentów: 53 851 542
 Czas: Natychmiast
 
 ###Zadanie 2b - Postgres
