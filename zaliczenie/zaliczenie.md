@@ -28,6 +28,8 @@ time bunzip2 -c RC_2015-01.bz2 | mongoimport --drop --host 127.0.0.1 -d test -c 
 Zużycie zasobów (procesora, RAM'u, Sieci, Dysku):
 
 ![zasoby import](zasoby_import.png)
+
+**Odczyty/zapisy dysku**
 ![disk read](disk_read.png)
 
 Czas poświęcony na wykonanie importu bazy danych
