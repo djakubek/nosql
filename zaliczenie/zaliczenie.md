@@ -35,8 +35,6 @@ Czas poświęcony na wykonanie importu bazy danych
 
 Rozmiar plików bazy danych po zaimportowaniu 53,7 GB
 
-###Zadanie 2a - Postgres
------------------------------------------------------------------
 
 ###Zadanie 2b - Mongodb
 ----------------------------------------------------------------
@@ -48,6 +46,10 @@ db.reddit.count()
 **Iość zaimportowanych dokumentów:** 53 851 542
 
 **Czas:** Natychmiast
+
+
+###Zadanie 2a - Postgres 9.3.10
+-----------------------------------------------------------------
 
 ###Zadanie 2b - Postgres
 ----------------------------------------------------------------
