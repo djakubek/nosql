@@ -29,7 +29,7 @@ Zużycie zasobów (procesora, RAM'u, Sieci, Dysku):
 
 ![zasoby import](zasoby_import.png)
 
-**Odczyty/zapisy dysku**
+Odczyty/zapisy dysku
 ![disk read](disk_read.png)
 
 Czas poświęcony na wykonanie importu bazy danych
