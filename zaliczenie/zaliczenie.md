@@ -40,3 +40,13 @@ Rozmiar plików po zaimportowaniu 53,7 GB
 
 ###Zadanie 2b - Mongodb
 ----------------------------------------------------------------
+Zliczenie zainportowanych rekordów
+
+```sh
+db.reddit.count()
+```
+Czas: Natychmiast
+
+###Zadanie 2b - Postgres
+----------------------------------------------------------------
+
