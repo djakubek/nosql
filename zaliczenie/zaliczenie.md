@@ -45,9 +45,9 @@ Zliczenie zainportowanych rekordów
 ```sh
 db.reddit.count()
 ```
-Iość zaimportowanych dokumentów: 53 851 542
+**Iość zaimportowanych dokumentów:** 53 851 542
 
-Czas: Natychmiast
+**Czas:** Natychmiast
 
 ###Zadanie 2b - Postgres
 ----------------------------------------------------------------
