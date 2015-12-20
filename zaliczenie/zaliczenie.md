@@ -19,7 +19,7 @@ Wykorzystany sprzet:
 | Postgres              | 9.3.10                       |
 
 
-###Zadanie 2a - Mongodb
+###Zadanie 2a - Mongodb 3.0.7
 ---------------------------------------------
 Rozpakowywanie pliku RC_2015-01.bz2 (**rozmiar : 5,5 GB (5452413560 bajtów)**) wraz z importem do bazy danych
 ```sh
