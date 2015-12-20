@@ -16,7 +16,7 @@ Wykorzystany sprzet:
 |-----------------------|------------------------------|
 | Bunzip2               | 1.0.6                        |
 | Mongodb               | 3.0.7                        |
-| Postgres              |                              |
+| Postgres              | 9.3.10                       |
 
 
 ###Zadanie 2a - Mongodb
