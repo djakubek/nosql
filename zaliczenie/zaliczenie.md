@@ -39,6 +39,8 @@ Czas poświęcony na wykonanie importu bazy danych
 
 Rozmiar plików bazy danych po zaimportowaniu 53,7 GB
 
+**Czas:** 43 min 68 sekund
+
 
 ###Zadanie 2b - Mongodb
 ----------------------------------------------------------------
