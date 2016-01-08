@@ -55,7 +55,7 @@ db.reddit.count()
 
 ###Zadanie 2c - Mongodb
 
-**Zliczenie czterech autorów najwyżej ocenionych wpisów**
+**Zliczenie czterech autorów najwyżej ocenionych komentarzy**
 ```sh
 db.reddit.find({},{_id:0, subreddit:1,author:1, score:true}).sort({score:-1}).limit(4)
 ```
