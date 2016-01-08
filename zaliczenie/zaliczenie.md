@@ -1,4 +1,4 @@
-Zaliczenie
+Zaliczenie    Autor: Daniel Jakubek
 ---------------------------------------------
 Wykorzystany sprzet:
 
