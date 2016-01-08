@@ -55,6 +55,32 @@ db.reddit.count()
 
 ###Zadanie 2c - Mongodb
 
+**Zliczenie czterech autorów najwyżej ocenionych wpisów**
+db.reddit.find({},{_id:0, subreddit:1,author:1, score:true}).sort({score:-1}).limit(4)
+```sh
+{
+  "subreddit": "AskReddit",
+  "score": 6597,
+  "author": "a1988eli"
+}
+{
+  "subreddit": "tifu",
+  "author": "GingaSnapzzz",
+  "score": 6448
+}
+{
+  "score": 6105,
+  "author": "MAY01337",
+  "subreddit": "tifu"
+}
+{
+  "subreddit": "AskReddit",
+  "score": 5835,
+  "author": "rugtoad"
+}
+Fetched 4 record(s) in 187727ms
+```
+
 
 
 ###Zadanie 2a - Postgres 9.3.10
