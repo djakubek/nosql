@@ -17,6 +17,7 @@ Wykorzystany sprzet:
 | Bunzip2               | 1.0.6                        |
 | Mongodb               | 3.0.7                        |
 | Postgres              | 9.3.10                       |
+| Iotop (program do monitorowania aktywności dyskowej                 | 0.6-1
 
 
 ###Zadanie 2a - Mongodb 3.0.7
