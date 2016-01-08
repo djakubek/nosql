@@ -30,7 +30,7 @@ Zużycie zasobów (procesora, RAM'u, Sieci, Dysku):
 
 ![zasoby import](zasoby_import.png)
 
-Odczyty/zapisy dysku
+Odczyty/zapisy dysku Iotop
 
 ![disk read](disk_read.png)
 
