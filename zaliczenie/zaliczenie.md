@@ -39,7 +39,7 @@ Czas poświęcony na wykonanie importu bazy danych
 
 Rozmiar plików bazy danych po zaimportowaniu 53,7 GB
 
-**Czas:** 43 min 68 sekund
+**Czas:** 43 min 68 sek
 
 
 ###Zadanie 2b - Mongodb
@@ -84,7 +84,7 @@ db.reddit.find({},{_id:0, subreddit:1,author:1, score:true}).sort({score:-1}).li
 }
 Fetched 4 record(s) in 187727ms
 ```
-
+**Czas: 3 minuty 12 sek**
 
 
 ###Zadanie 2a - Postgres 9.3.10
