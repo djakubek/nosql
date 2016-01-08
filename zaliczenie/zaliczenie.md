@@ -50,6 +50,9 @@ db.reddit.count()
 
 **Czas:** Natychmiast
 
+###Zadanie 2c - Mongodb
+
+
 
 ###Zadanie 2a - Postgres 9.3.10
 -----------------------------------------------------------------
