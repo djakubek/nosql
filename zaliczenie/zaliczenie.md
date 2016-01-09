@@ -98,6 +98,8 @@ db.reddit.find({subreddit:"BMW"}).count()
 
 W obu przypadkach komputer zachowywał się podobnie i wykazywał większe obciązenie dysku niż pozostałych zasobów
 
+![diskreaddbfind](disk_read_dbfind.png)
+
 
 
 ###Zadanie 2a - Postgres 9.3.10
