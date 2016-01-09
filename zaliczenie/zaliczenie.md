@@ -86,6 +86,15 @@ Fetched 4 record(s) in 187727ms
 ```
 **Czas: 3 minuty 12 sek**
 
+**Zliczenie wszystkich komnetarzy dotyczących tematu BMW**
+
+```sh
+db.reddit.find({subreddit:"BMW"}).count()
+```
+
+**Wynik:** 11700
+**Czas:** 2 min 58 sek
+
 
 ###Zadanie 2a - Postgres 9.3.10
 -----------------------------------------------------------------
