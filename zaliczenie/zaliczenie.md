@@ -93,6 +93,7 @@ db.reddit.find({subreddit:"BMW"}).count()
 ```
 
 **Wynik:** 11700
+
 **Czas:** 2 min 58 sek
 
 W obu przypadkach komputer zachowywał się podobnie i wykazywał większe obciązenie dysku niż pozostałych zasobów
