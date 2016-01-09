@@ -100,6 +100,8 @@ W obu przypadkach komputer zachowywał się podobnie i wykazywał większe obci�
 
 ![diskreaddbfind](disk_read_dbfind.png)
 
+![diskreaddbzasob](zasoby_dbfind.png)
+
 
 
 ###Zadanie 2a - Postgres 9.3.10
