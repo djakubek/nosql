@@ -97,11 +97,21 @@ db.reddit.find({subreddit:"BMW"}).count()
 
 **Czas:** 2 min 58 sek
 
-W obu przypadkach komputer zachowywał się podobnie i wykazywał większe obciązenie dysku niż pozostałych zasobów
+
+
+
+Zanalezienie wszystkich komentarzy, których autorzy już nie istnieją
+```sh
+db.reddit.find({author: "[deleted]"}).count()
+```
+
+**Wynik przeszukiwania:**3 917 360
 
 ![diskreaddbfind](disk_read_dbfind.png)
 
 ![diskreaddbzasob](zasoby_dbfind.png)
+
+We wszystkich przypadkach komputer zachowywał się podobnie i wykazywał większe obciązenie dysku niż pozostałych zasobów. **Wniosek:** By przyspieszyć działanie wyszukwania, warto zaopatrzyć się w bardzo szybką macierz dyskową.
 
 
 
