@@ -114,7 +114,7 @@ We wszystkich przypadkach komputer zachowywał się podobnie i wykazywał więks
 ###Zadanie 2c - Mongodb
 -----------------------------------------------------------------
 
-[Mapka](mapa.geojson) LineString przedstawiająca dojaz na studia źródło [geojson.io](geojson.io)
+[Mapka](map.geojson) LineString przedstawiająca dojaz na studia źródło [geojson.io](geojson.io)
 
 
 
