@@ -17,7 +17,8 @@ Wykorzystany sprzet:
 | Bunzip2               | 1.0.6                        |
 | Mongodb               | 3.0.7                        |
 | Postgres              | 9.3.10                       |
-| Iotop (program do monitorowania aktywności dyskowej                 | 0.6-1
+| Iotop (program do monitorowania aktywności dyskowej                 | 0.6-1|
+| Pgfutter              |
 
 
 ###Zadanie 2a - Mongodb 3.0.7
@@ -106,6 +107,8 @@ W obu przypadkach komputer zachowywał się podobnie i wykazywał większe obci�
 
 ###Zadanie 2a - Postgres 9.3.10
 -----------------------------------------------------------------
+Rozpakowałem bazde RC_2015-01 programem bunzip,potem zaimportowałem do Postgresa za pomocą programu [Pgfutter](https://github.com/lukasmartinelli/pgfutter). Czas rozpakowywania **15min**, czas importu, całkowity czas 
+
 
 ###Zadanie 2b - Postgres
 -----------------------------------------------------------------
