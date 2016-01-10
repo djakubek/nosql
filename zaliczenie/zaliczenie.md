@@ -85,19 +85,17 @@ db.reddit.find({},{_id:0, subreddit:1,author:1, score:true}).sort({score:-1}).li
 }
 Fetched 4 record(s) in 187727ms
 ```
-**Czas: 3 minuty 12 sek**
+**Czas:** 3 minuty 12 sek
 
-**Zliczenie wszystkich komnetarzy dotyczących tematu BMW**
+**Zliczenie wszystkich komentarzy dotyczących tematu BMW**
 
 ```sh
 db.reddit.find({subreddit:"BMW"}).count()
 ```
 
-**Wynik:** 11700
+**Wynik:** 11700 Myślałem ze więcej :)
 
 **Czas:** 2 min 58 sek
-
-
 
 
 Zanalezienie wszystkich komentarzy, których autorzy już nie istnieją
@@ -105,7 +103,7 @@ Zanalezienie wszystkich komentarzy, których autorzy już nie istnieją
 db.reddit.find({author: "[deleted]"}).count()
 ```
 
-**Wynik przeszukiwania:**3 917 360
+**Wynik przeszukiwania:**3 917 360 (Całkiem sporo)
 
 ![diskreaddbfind](disk_read_dbfind.png)
 
