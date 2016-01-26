@@ -119,8 +119,7 @@ We wszystkich przypadkach komputer zachowywał się podobnie i wykazywał więks
 
 
 
-##POSTGRES W przygotowaniu
-Okazalo sie ze mam za mało miejsca na dysku 
+##POSTGRES
 
 ###Zadanie 2a - Postgres 9.3.10
 -----------------------------------------------------------------
