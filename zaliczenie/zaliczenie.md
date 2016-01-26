@@ -127,6 +127,11 @@ Okazalo sie ze mam za mało miejsca na dysku
 Rozpakowałem bazde RC_2015-01 programem bunzip,potem zaimportowałem do Postgresa za pomocą programu [Pgfutter](https://github.com/lukasmartinelli/pgfutter). Czas rozpakowywania **15 min**, czas importu **34 min 46 sek**
 , całkowity czas **49 min 46 sek**.
 
+![psqlm](psql_import.png)
+
+![psqld](psql_importd.png)
+
+
 
 ###Zadanie 2b - Postgres
 -----------------------------------------------------------------
