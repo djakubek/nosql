@@ -141,6 +141,14 @@ Całkowity czas **49 min 46 sek**
 
 ###Zadanie 2b - Postgres
 -----------------------------------------------------------------
+Zliczenie zaimportowanych rekordów
+
+```sh
+select count(*) from import.rc_2015_01;
+
+```
+
+Czas **4 min 23 sek**
 
 ###Zadanie 2c - Postgres
 -----------------------------------------------------------------
