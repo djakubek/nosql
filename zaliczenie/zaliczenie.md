@@ -124,7 +124,8 @@ Okazalo sie ze mam za mało miejsca na dysku
 
 ###Zadanie 2a - Postgres 9.3.10
 -----------------------------------------------------------------
-Rozpakowałem bazde RC_2015-01 programem bunzip,potem zaimportowałem do Postgresa za pomocą programu [Pgfutter](https://github.com/lukasmartinelli/pgfutter). Czas rozpakowywania **15min**, czas importu, całkowity czas 
+Rozpakowałem bazde RC_2015-01 programem bunzip,potem zaimportowałem do Postgresa za pomocą programu [Pgfutter](https://github.com/lukasmartinelli/pgfutter). Czas rozpakowywania **15 min**, czas importu **34 min 46 sek**
+, całkowity czas **49 min 46 sek**.
 
 
 ###Zadanie 2b - Postgres
