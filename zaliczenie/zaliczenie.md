@@ -152,6 +152,10 @@ Poza szybkością wykonanywanych operacji, zmniejszyło się rzeźbienie po dysk
 
 Warto zajżeć na stronę [PgTune](http://pgtune.leopard.in.ua/).
 
+![psql_tmonitorr](psql_tmonitor.png)
+
+![psql_tdyskk](psql_tdysk.png)
+
 
 
 ###Zadanie 2c - Postgres
