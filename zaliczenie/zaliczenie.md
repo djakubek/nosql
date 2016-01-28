@@ -144,7 +144,7 @@ select count(*) from import.rc_2015_01;
 ```
 Czas **4 min 23 sek**
 
-**Ciekawostka:** Pokusiłem się o przekonfigurowanie parametrów bazy danych i jestem mile zaskoczony wynikami. Powyższe zapytanie po zastosowaniu zmian skróciło się do zaledwie **2 min i 10 sek**. 
+**Ciekawostka:** Pokusiłem się o przekonfigurowanie parametrów bazy danych i jestem mile zaskoczony wynikami. Powyższe zapytanie po zastosowaniu zmian skróciło się do zaledwie **2 min i 10 sek !!**. 
 
 Poza szybkością wykonanywanych operacji, zmniejszyło się rzeźbienie po dysku(głównie zapisów i pamięci SWAP) oraz nieznacznie wykorzystanie procesora, system operacyjny lepiej odpowiadał podczs wykonywania zapytania.
 
