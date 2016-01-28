@@ -109,7 +109,9 @@ db.reddit.find({author: "[deleted]"}).count()
 
 ![diskreaddbzasob](zasoby_dbfind.png)
 
-We wszystkich przypadkach komputer zachowywał się podobnie i wykazywał większe obciązenie dysku niż pozostałych zasobów. **Wniosek:** By przyspieszyć działanie wyszukwania, warto zaopatrzyć się w bardzo szybką macierz dyskową.
+We wszystkich przypadkach komputer zachowywał się podobnie i wykazywał większe obciązenie dysku niż pozostałych zasobów. 
+
+**Wniosek:** By przyspieszyć działanie wyszukwania, warto zaopatrzyć się w bardzo szybką macierz dyskową.
 
 ###Zadanie 2c - Mongodb
 -----------------------------------------------------------------
