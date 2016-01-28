@@ -142,6 +142,8 @@ Zliczenie zaimportowanych rekordów
 select count(*) from import.rc_2015_01;
 
 ```
+**Wynik: 53 851 542**
+
 Czas **4 min 23 sek**
 
 **Ciekawostka:** Pokusiłem się o przekonfigurowanie parametrów bazy danych i jestem mile zaskoczony wynikami. Powyższe zapytanie po zastosowaniu zmian skróciło się do zaledwie **2 min i 10 sek !!**. 
