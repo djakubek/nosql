@@ -130,6 +130,7 @@ pgfutter --db postgres --user postgres --pw 7890  json RC_2015-01
 ```
 Czas rozpakowywania **15 min**
 Czas importu **34 min 46 sek**
+
 Całkowity czas **49 min 46 sek**
 
 ![psqlm](psql_import.png)
