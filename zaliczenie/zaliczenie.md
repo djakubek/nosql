@@ -198,17 +198,21 @@ Zachowanie zasobów było identyczne jak powyżej
 
 =================================================================
 
-##PODSYMOWANIE
+##PODSYMOWANIE WYDAJNOŚCI BAZ DANYCH
 -----------------------------------------------------------------
 
 | Polecenie | MongoDB     | Postgres |
 |-----------|-------------|----------|
 | Importowanie danych | 43 min 68 sek  |49 min 46 sek |
 | Zliczenie zaimportowanych rekordów | Natychmiast  | 2 min 8 sek |
-|  Zliczenie wszystkich komentarzy dotyczących tematu BMW | 2 min 58 sek | 4 min 40 sek|
+| Zliczenie wszystkich komentarzy dotyczących tematu BMW | 2 min 58 sek | 4 min 40 sek|
+
+Wniosek MongoDB na aktylanym sprzęcie bije o głowe Postgres'a, jest dobry wybór dla BIG DATA :)
+
+=================================================================
 
 
-###Zadanie 2d - Mongodb
+###Zadanie 2d - Mongodb - GEOJSON
 -----------------------------------------------------------------
 
 [Mapka](map.geojson) LineString przedstawiająca dojaz na studia źródło [geojson.io](http://www.geojson.io)
