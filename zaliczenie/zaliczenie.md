@@ -215,4 +215,4 @@ Wniosek MongoDB na aktylanym sprzęcie bije o głowe Postgres'a, jest dobry wyb�
 ###Zadanie 2d - Mongodb - GEOJSON
 -----------------------------------------------------------------
 
-[Mapka](map.geojson) LineString przedstawiająca dojaz na studia źródło [geojson.io](http://www.geojson.io)
+**[Mapka](map.geojson) LineString** przedstawiająca dojaz na studia źródło [geojson.io](http://www.geojson.io)
