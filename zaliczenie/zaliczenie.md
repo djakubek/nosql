@@ -215,7 +215,7 @@ Wniosek MongoDB na aktylanym sprzęcie bije o głowe Postgres'a, jest dobry wyb�
 ###Zadanie 2d - Mongodb - GEOJSON
 -----------------------------------------------------------------
 
-Pobrałem [GEOJSON'y](http://otwartezabytki.pl/strony/pobierz-dane) z zabytkami w Polsce ** Baza aktualna z 25.01.2016**
+Pobrałem [GEOJSON'y](http://otwartezabytki.pl/strony/pobierz-dane) z zabytkami w Polsce **Baza aktualna z 25.01.2016**
 
 
 
