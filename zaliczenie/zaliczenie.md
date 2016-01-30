@@ -161,7 +161,14 @@ Warto zajżeć na stronę [PgTune](http://pgtune.leopard.in.ua/).
 ###Zadanie 2c - Postgres
 -----------------------------------------------------------------
 
+**Zliczenie wszystkich komentarzy dotyczących tematu BMW**
 
+```sh
+SELECT count(*) FROM import.rc_2015_01 WHERE data->>'subreddit' like ('BMW');
+```
+**Wynik:** 11700
+
+**Czas:** 4 min 40 sek
 
 ###Zadanie 2d - Mongodb
 -----------------------------------------------------------------
