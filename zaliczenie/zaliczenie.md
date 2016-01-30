@@ -198,7 +198,7 @@ Zachowanie zasobów było identyczne jak powyżej
 
 =================================================================
 
-##PODSYMOWANIE WYDAJNOŚCI BAZ DANYCH
+##PODSUMOWANIE WYDAJNOŚCI BAZ DANYCH
 -----------------------------------------------------------------
 
 | Polecenie | MongoDB     | Postgres |
