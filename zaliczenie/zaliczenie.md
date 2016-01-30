@@ -161,6 +161,16 @@ Warto zajżeć na stronę [PgTune](http://pgtune.leopard.in.ua/).
 ###Zadanie 2c - Postgres
 -----------------------------------------------------------------
 
+**Zliczenie czterech autorów najwyżej ocenionych komentarzy**
+
+```sh
+select data->>'author' AS author,data->>'score' AS score from import.rc_2015_01 order by score desc limit 4;
+```
+**Czas:** 9 min 3 sek
+
+*Warto pomyśleć nad lepszym zapytaniem :) 
+
+
 **Zliczenie wszystkich komentarzy dotyczących tematu BMW**
 
 ```sh
