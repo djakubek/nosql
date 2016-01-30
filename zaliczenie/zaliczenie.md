@@ -173,6 +173,19 @@ SELECT count(*) FROM import.rc_2015_01 WHERE data->>'subreddit' like ('BMW');
 
 ![psql_bmwm](psql_bmwm.png)
 
+**Zanalezienie wszystkich komentarzy, których autorzy już nie istnieją**
+
+```sh
+SELECT count(*) FROM import.rc_2015_01 WHERE data->>'author' like ('[deleted]');
+```
+
+**Wynik:** 3917360
+
+**Czas:** 4 min 39 sek
+
+Zachowanie zasobów było identyczne jak powyżej
+
+
 ###Zadanie 2d - Mongodb
 -----------------------------------------------------------------
 
