@@ -171,6 +171,7 @@ select data->>'author' AS author,data->>'score' AS score from import.rc_2015_01 
 *Warto pomyśleć nad lepszym zapytaniem :) 
 
 
+
 **Zliczenie wszystkich komentarzy dotyczących tematu BMW**
 
 ```sh
@@ -194,6 +195,17 @@ SELECT count(*) FROM import.rc_2015_01 WHERE data->>'author' like ('[deleted]');
 **Czas:** 4 min 39 sek
 
 Zachowanie zasobów było identyczne jak powyżej
+
+=================================================================
+
+##PODSYMOWANIE
+-----------------------------------------------------------------
+
+| Polecenie | MongoDB     | Postgres |
+|-----------|-------------|----------|
+| Importowanie danych | 43 min 68 sek  |49 min 46 sek |
+| Zliczenie zaimportowanych rekordów | Natychmiast  | 2 min 8 sek |
+|  Zliczenie wszystkich komentarzy dotyczących tematu BMW | 2 min 58 sek | 4 min 40 sek|
 
 
 ###Zadanie 2d - Mongodb
