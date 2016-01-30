@@ -217,7 +217,27 @@ Wniosek MongoDB na aktylanym sprzęcie bije o głowe Postgres'a, jest dobry wyb�
 
 Pobrałem [GEOJSON'y](http://otwartezabytki.pl/strony/pobierz-dane) z zabytkami w Polsce **Baza aktualna z 25.01.2016**
 
+Rozpakowałem plik i zaimportowałem JSON'y do mongoDB skryptem powłoki
 
+```sh
+ls -1 *.json | sed 's/.json$//' | while read col;
+do 
+mongoimport --host 127.0.0.1 -d GEOZABYTKI -c zabytki < $col.json;
+done
+```
+**Zaimportowałem 42346 JSON'ów **
+
+Dodałem GEO-Index do kolekcji zabytki
+
+```sh
+db.zabytki.ensureIndex({"loc": "2dsphere"})
+{  
+"createdCollectionAutomatically": false,
+ "numIndexesBefore": 1,
+ "numIndexesAfter": 2,
+ "ok": 1
+ }
+```
 
 
 **[Mapka](map.geojson) LineString** przedstawiająca dojaz na studia źródło [geojson.io](http://www.geojson.io)
