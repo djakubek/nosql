@@ -166,11 +166,11 @@ Warto zajżeć na stronę [PgTune](http://pgtune.leopard.in.ua/).
 ```sh
 SELECT count(*) FROM import.rc_2015_01 WHERE data->>'subreddit' like ('BMW');
 ```
+![psql_bmwm](psql_bmwm.png)
+
 **Wynik:** 11700
 
 **Czas:** 4 min 40 sek
-
-![psql_bmwm](psql_bmwm.png)
 
 ###Zadanie 2d - Mongodb
 -----------------------------------------------------------------
