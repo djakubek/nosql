@@ -225,7 +225,7 @@ do
 mongoimport --host 127.0.0.1 -d GEOZABYTKI -c zabytki < $col.json;
 done
 ```
-**Zaimportowałem 42346 JSON'ów **
+**Zaimportowałem 42346 JSON'ów**
 
 Dodałem GEO-Index do kolekcji zabytki
 
@@ -238,6 +238,75 @@ db.zabytki.ensureIndex({"loc": "2dsphere"})
  "ok": 1
  }
 ```
+
+Wyświetlenie przykładowego GEOJSON'a
+```sh
+daniel-XPS-L421X(mongod-3.0.7) GEOZABYTKI> db.zabytki.find().skip(599).limit(1);
+
+{
+  "_id": ObjectId("56ad2e6eed08f7ed696552cf"),
+  "id": 11058,
+  "nid_id": "601408",
+  "identification": "Szkoła Ludowa, ob. Szkolne Schronisko Młodzieżowe",
+  "common_name": "",
+  "description": "",
+  "categories": [
+    "sportowy_kulturalny_edukacyjny"
+  ],
+  "state": "unchecked",
+  "register_number": "A/488/1 z 26.05.1997",
+  "dating_of_obj": "1896-1898",
+  "street": "ul. Sowińskiego 5",
+  "latitude": 53.1336059,
+  "longitude": 17.997711,
+  "tags": [ ],
+  "country_code": "PL",
+  "fprovince": null,
+  "fplace": null,
+  "documents_info": null,
+  "links_info": null,
+  "main_photo": {
+    "id": null,
+    "relic_id": null,
+    "author": null,
+    "date_taken": null,
+    "alternate_text": null,
+    "file": {
+      "url": "/assets/fallback/photo_default.png",
+      "icon": {
+        "url": "/assets/fallback/photo_icon_default.png"
+      },
+      "mini": {
+        "url": "/assets/fallback/photo_mini_default.png"
+      },
+      "midi": {
+        "url": "/assets/fallback/photo_midi_default.png"
+      },
+      "maxi": {
+        "url": "/assets/fallback/photo_maxi_default.png"
+      },
+      "full": {
+        "url": "/assets/fallback/photo_full_default.png"
+      }
+    },
+    "file_full_width": null
+  },
+  "events": [ ],
+  "entries": [ ],
+  "links": [ ],
+  "documents": [ ],
+  "alerts": [ ],
+  "descendants": [ ],
+  "photos": [ ],
+  "place_id": 90115,
+  "place_name": "Bydgoszcz",
+  "commune_name": "Bydgoszcz",
+  "district_name": "Bydgoszcz",
+  "voivodeship_name": "kujawsko-pomorskie"
+}
+```
+**Widać że oprócz nazwy zabytku, lokalizacji można z tej bazy dowiedzieć się wielu ciekawych rzeczy, min. województwo i rodzaj zabytku.**
+
 
 
 **[Mapka](map.geojson) LineString** przedstawiająca dojaz na studia źródło [geojson.io](http://www.geojson.io)
