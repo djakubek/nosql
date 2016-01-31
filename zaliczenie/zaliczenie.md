@@ -227,17 +227,6 @@ done
 ```
 **Zaimportowałem 42346 JSON'ów**
 
-Dodałem GEO-Index do kolekcji zabytki
-
-```sh
-db.zabytki.ensureIndex({"loc": "2dsphere"})
-{  
-"createdCollectionAutomatically": false,
- "numIndexesBefore": 1,
- "numIndexesAfter": 2,
- "ok": 1
- }
-```
 
 Wyświetlenie przykładowego GEOJSON'a
 ```sh
@@ -307,9 +296,23 @@ daniel-XPS-L421X(mongod-3.0.7) GEOZABYTKI> db.zabytki.find().skip(599).limit(1);
 ```
 **Widać że oprócz nazwy zabytku, lokalizacji można z tej bazy dowiedzieć się wielu ciekawych rzeczy, min. województwo i rodzaj zabytku.**
 
-Musiałem zatualizować dokumenty bazy danych do odpowiedniej struktury Point, zrobiłem to poniżej, ponieważ kordynaty nie są umieszczone w odpowedniej strukturze. Nie było to łatwe 
+Musiałem zatualizować dokumenty bazy danych do odpowiedniej struktury Point, zrobiłem to poniżej, ponieważ kordynaty nie są umieszczone w odpowedniej strukturze. Nie było to łatwe i zajeło bardzo dużo czasu
+
 ```sh
-db.zabytki.find().snapshot().forEach( function (getelem) { db.zabytki.update({_id:getelem._id},{$set: {loc: {"type": "Point", "coordinates": [getelem.latitude,getelem.longitude]}}},{multi:true})});
+db.zabytki.find().snapshot().forEach( function (getelem) { db.zabytki.update({_id:getelem._id},{$set: {loc: {"type": "Point", "coordinates": [getelem.longitude,getelem.latitude]}}},{multi:true})});
+```
+
+
+Dodałem GEO-Index do kolekcji zabytki
+
+```sh
+db.zabytki.ensureIndex({"loc":"2dsphere"});
+{  
+"createdCollectionAutomatically": false,
+ "numIndexesBefore": 1,
+ "numIndexesAfter": 2,
+ "ok": 1
+ }
 ```
 
 
