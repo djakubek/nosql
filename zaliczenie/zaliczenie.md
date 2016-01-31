@@ -296,7 +296,7 @@ daniel-XPS-L421X(mongod-3.0.7) GEOZABYTKI> db.zabytki.find().skip(599).limit(1);
 ```
 **Widać że oprócz nazwy zabytku, lokalizacji można z tej bazy dowiedzieć się wielu ciekawych rzeczy, min. województwo i rodzaj zabytku.**
 
-Musiałem zatualizować dokumenty bazy danych do odpowiedniej struktury Point, zrobiłem to poniżej, ponieważ kordynaty nie są umieszczone w odpowedniej strukturze. Nie było to łatwe i zajeło bardzo dużo czasu
+Musiałem zaktualizować dokumenty bazy danych do odpowiedniej struktury Point, zrobiłem to poniżej, ponieważ kordynaty nie są umieszczone w odpowedniej strukturze. Nie było to łatwe i zajeło bardzo dużo czasu
 
 ```sh
 db.zabytki.find().snapshot().forEach( function (getelem) { db.zabytki.update({_id:getelem._id},{$set: {loc: {"type": "Point", "coordinates": [getelem.longitude,getelem.latitude]}}},{multi:true})});
@@ -314,6 +314,15 @@ db.zabytki.ensureIndex({"loc":"2dsphere"});
  "ok": 1
  }
 ```
+
+Zrobiłem zapytanie, które pokazuje jakie zabytki znajdują się w okolicy mojej miejscowości czyli Nowej Karczmy w odległości 10 km.
+```sh
+db.zabytki.find({loc: {$near: {$geometry: {type: "Point", coordinates: [ 18.202447, 54.133237]}, $maxDistance: 10000}}});
+
+```
+W wyniku otrzymałem 4 miejsca przedstawione po przez POINT
+
+
 
 
 
