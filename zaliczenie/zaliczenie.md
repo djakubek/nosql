@@ -325,7 +325,7 @@ Przykładowy [JSON](przyklad.json) z bazy zabytków
 **W wyniku otrzymałem 4 miejsca przedstawione na mapce po przez [POINT](point.geojson)**
 ----------------------------------------------------------------------------------
 
-**Mapka typu [POLYGON](polygon_zabytki.geojson) przedstawiajaca zabytki w okolicy GDAŃSKA 
+**Mapka typu [POLYGON](polygon_zabytki.geojson) przedstawiajaca zabytki w okolicy GDAŃSKA** 
 ```sh
  db.zabytki.find({loc: {$near: {$geometry: {type: "Point", coordinates: [18.574226, 54.396047]}, $maxDistance: 5000}}});
 ```
