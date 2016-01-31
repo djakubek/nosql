@@ -307,9 +307,9 @@ daniel-XPS-L421X(mongod-3.0.7) GEOZABYTKI> db.zabytki.find().skip(599).limit(1);
 ```
 **Widać że oprócz nazwy zabytku, lokalizacji można z tej bazy dowiedzieć się wielu ciekawych rzeczy, min. województwo i rodzaj zabytku.**
 
-Musiałem zatualizować dokumenty bazy danych do odpowiedniej struktury Point, zrobiłem to kodem poniżej, ponieważ kordynaty nie są umieszczone w odpowedniej strukturze.
+Musiałem zatualizować dokumenty bazy danych do odpowiedniej struktury Point, zrobiłem to poniżej, ponieważ kordynaty nie są umieszczone w odpowedniej strukturze. Nie było to łatwe 
 ```sh
-db.zabytki.find().snapshot().forEach( function (getelem) { db.zabytki.update({_id:getelem._id},{$set: {loc: {"type": "Point", "coordinates": [getelem.long,getelem.lite]}}},{multi:true})});
+db.zabytki.find().snapshot().forEach( function (getelem) { db.zabytki.update({_id:getelem._id},{$set: {loc: {"type": "Point", "coordinates": [getelem.latitude,getelem.longitude]}}},{multi:true})});
 ```
 
 
