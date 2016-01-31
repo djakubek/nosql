@@ -320,7 +320,9 @@ Zrobiłem zapytanie, które pokazuje jakie zabytki znajdują się w okolicy moj
 db.zabytki.find({loc: {$near: {$geometry: {type: "Point", coordinates: [ 18.202447, 54.133237]}, $maxDistance: 10000}}});
 
 ```
-W wyniku otrzymałem 4 miejsca przedstawione na mapce po przez [POINT](point.geojson)
+Przykładowy [JSON](przyklad.json) z bazy zabytków
+
+**W wyniku otrzymałem 4 miejsca przedstawione na mapce po przez [POINT](point.geojson)**
 
 
 
