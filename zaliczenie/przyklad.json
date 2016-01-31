@@ -1,0 +1,68 @@
+{
+  "id": 45852,
+  "nid_id": "636491",
+  "identification": "Kościół ewangelicki,  ob. par. rzym.-kat. p.w. Matki Boskiej Królowej Polski",
+  "common_name": "",
+  "description": "",
+  "categories": [
+    "sakralny"
+  ],
+  "state": "unchecked",
+  "register_number": "A-1185 z 21.04.1998",
+  "dating_of_obj": "1891-97",
+  "street": "",
+  "latitude": 54.1019335,
+  "longitude": 18.1326075,
+  "tags": [ ],
+  "country_code": "PL",
+  "fprovince": null,
+  "fplace": null,
+  "documents_info": null,
+  "links_info": null,
+  "main_photo": {
+    "id": null,
+    "relic_id": null,
+    "author": null,
+    "date_taken": null,
+    "alternate_text": null,
+    "file": {
+      "url": "/assets/fallback/photo_default.png",
+      "icon": {
+        "url": "/assets/fallback/photo_icon_default.png"
+      },
+      "mini": {
+        "url": "/assets/fallback/photo_mini_default.png"
+      },
+      "midi": {
+        "url": "/assets/fallback/photo_midi_default.png"
+      },
+      "maxi": {
+        "url": "/assets/fallback/photo_maxi_default.png"
+      },
+      "full": {
+        "url": "/assets/fallback/photo_full_default.png"
+      }
+    },
+    "file_full_width": null
+  },
+  "events": [ ],
+  "entries": [ ],
+  "links": [ ],
+  "documents": [ ],
+  "alerts": [ ],
+  "descendants": [ ],
+  "photos": [ ],
+  "place_id": 16361,
+  "place_name": "Nowy Barkoczyn",
+  "commune_name": "Nowa Karczma",
+  "district_name": "kościerski",
+  "voivodeship_name": "pomorskie",
+  "loc": {
+    "type": "Point",
+    "coordinates": [
+      18.1326075,
+      54.1019335
+    ]
+  }
+}
+
