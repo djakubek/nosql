@@ -328,4 +328,4 @@ Przykładowy [JSON](przyklad.json) z bazy zabytków
 
 
 
-**[Mapka](map.geojson) LineString** przedstawiająca dojaz na studia źródło [geojson.io](http://www.geojson.io)
+**[Mapka](map.geojson) LineString** wykonana ręcznie przedstawiająca dojaz na studia źródło [geojson.io](http://www.geojson.io)
