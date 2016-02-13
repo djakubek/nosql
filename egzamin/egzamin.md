@@ -13,6 +13,12 @@ Wykorzystany sprzet:
 | Model komputera       | Ultrabook DELL XPS 14        |
 | MongoDB               | 3.0.7                        |
 
+**Do wykonania zadań poniżej wykorzystałem bazę danych zabytków utworzoną wcześniej**
 
+Zliczyłem wszystkie rekordy
+```sh
+db.zabytki.count()
+42346
+```
 
 
