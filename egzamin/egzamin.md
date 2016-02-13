@@ -85,12 +85,6 @@ db.zabytki.find().limit(1).skip(500)
   "commune_name": "Bydgoszcz",
   "district_name": "Bydgoszcz",
   "voivodeship_name": "kujawsko-pomorskie",
-  "loc": {
-    "type": "Point",
-    "coordinates": [
-      18.0062492,
-      53.1311236
-    ]
   }
 }
 ```
