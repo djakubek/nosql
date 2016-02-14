@@ -132,7 +132,7 @@ db.zabytki.aggregate( {"$group" : {"_id" : "$voivodeship_name", "count" : {"$sum
 db.zabytki.aggregate([ {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" : 1}}}, {"$sort":{"ilosc":-1}}, {"$limit" :100}])
 ```
 
-**Wyniki pierszych czterech pozycji**
+**Cztery pierwsze pozycje wyniku**
 
 ```sh
 {
@@ -153,6 +153,13 @@ db.zabytki.aggregate([ {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" 
     },
 ```
 
-**Przedstawienie pierwszyszych 100 wyników w fromie wykresu**
+**Przedstawienie pierwszyszych 25 wyników w fromie wykresu**
 ![wykres2](wykres2.png)
+
+Jak widać jest sporo zabytków, których data budowy nie jest oszacowana
+
+---------------------------------------------------------------------------------------
+3.
+
+
 
