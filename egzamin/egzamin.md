@@ -91,7 +91,7 @@ db.zabytki.find().limit(1).skip(500)
 
 ======================================================================
 
-**Cztery agregacje korzystające z Aggregation Pipeline w JavaScript
+##Cztery agregacje korzystające z Aggregation Pipeline w JavaScript
 
 -------------------------------------------------------------------------
 
