@@ -156,7 +156,7 @@ db.zabytki.aggregate([ {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" 
 **Przedstawienie pierwszyszych 25 wyników w fromie wykresu**
 ![wykres2](wykres2.png)
 
-Jak widać jest sporo zabytków, których data budowy nie jest oszacowana
+Jak widać jest sporo zabytków w Polsce, których data budowy nie jest oszacowana
 
 ---------------------------------------------------------------------------------------
 3.
