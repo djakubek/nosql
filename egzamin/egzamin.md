@@ -130,7 +130,7 @@ db.zabytki.aggregate( {"$group" : {"_id" : "$voivodeship_name", "count" : {"$sum
 **2. Wyświetlenie ilości zabytków według datowania roku budowy obiektów**
 
 ```sh
-db.zabytki.aggregate([ {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" : 1}}}, {"$sort":{"ilosc":-1}}, {"$limit" :100}])
+db.zabytki.aggregate([ {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" : 1}}}, {"$sort":{"ilosc":-1}}, {"$limit" :25}])
 ```
 
 **Cztery pierwsze pozycje wyniku**
@@ -260,4 +260,131 @@ Mogło być więcej, być może baza danych nie jest kompletnie uzupełniona prz
 
 ###Powyższe agregacje wykonane w innym języku niż JavaScript.
 --------------------------------------------------------------
-Do wykonania tego zadania wykorzystałem język programowania PYTHON
+Do wykonania tego zadania wykorzystałem język programowania PYTHON (2.7.6 )
+
+Agregacja 1 :
+```sh
+# -*- coding: utf-8 -*-
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['GEOZABYTKI']
+collection = db['zabytki']
+
+pipeline = [
+  { "$group": {"_id": "$voivodeship_name", "count" : {"$sum" : 1}}},
+  {"$sort":{"count":-1}}
+]
+
+zapytanie = db.zabytki.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+```
+
+**Wynik**
+
+
+Widać że są pewne problemy z kodowaniem polskich znaków, nawet po dodaniu a na początku pliku odpowedniego kodowania.
+---------------------------------------------------
+Agregacja2 
+
+```sh
+# -*- coding: utf-8 -*-
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['GEOZABYTKI']
+collection = db['zabytki']
+
+pipeline = [
+  {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" : 1}}},
+  {"$sort":{"ilosc":-1}}, {"$limit" :25}
+]
+
+zapytanie = db.zabytki.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+
+```
+
+Wynik
+
+Agregacja3
+
+```sh
+# -*- coding: utf-8 -*-
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['GEOZABYTKI']
+collection = db['zabytki']
+
+pipeline = [
+  {"$group" : {"_id" : "$categories", "ilosc" : {"$sum" : 1}}}, 
+  {"$sort":{"ilosc":-1}}, {"$limit" :30}
+]
+
+zapytanie = db.zabytki.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+
+```
+Wynik
+
+Agregacja4
+
+```sh
+# -*- coding: utf-8 -*-
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['GEOZABYTKI']
+collection = db['zabytki']
+
+pipeline = [
+  {"$match" : {"categories": 'sakralny'}}, 
+  {"$group" : {"_id" : "sakralny", "ilosc" : {"$sum" : 1}}}
+]
+
+zapytanie = db.zabytki.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+```
+Wynik
+
+--------------------------------------------------------------------------------------
+
+```sh
+# -*- coding: utf-8 -*-
+import pymongo
+import json
+from bson.son import SON
+from pymongo import MongoClient
+client = MongoClient()
+
+db = client['GEOZABYTKI']
+collection = db['zabytki']
+
+pipeline = [
+  {"$match": { "categories": 'park_ogrod'}},
+  {"$group" : {"_id" : "park_ogród", "ilosc" : {"$sum" : 1}}}
+]
+
+zapytanie = db.zabytki.aggregate(pipeline)
+for doc in zapytanie:
+   print(doc)
+```
+
+Wynik
