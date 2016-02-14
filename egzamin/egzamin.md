@@ -205,5 +205,27 @@ db.zabytki.aggregate([ {"$group" : {"_id" : "$categories", "ilosc" : {"$sum" : 1
 
 ![wykres3](wykres3.png)
 
+------------------------------------------------------------------------------
 
+**4. Wyświetlenie ilości zabytków, których katergoria dotyczy obiektów sakralnych**
 
+```sh
+db.zabytki.aggregate({$match: { categories: 'sakralny'}},{"$group" : {"_id" : "sakralny", "ilosc" : {"$sum" : 1}}})
+```
+
+**Wynik agregacji:**
+
+```sh
+{
+  "result": [
+    {
+      "_id": "sakralny",
+      "ilosc": 9974
+    }
+  ],
+  "ok": 1
+}
+```
+A więc w Polsce mamy około 10 tyś obiektów powiązanych z tematyką sakralną
+
+=============================================================================
