@@ -117,62 +117,8 @@ db.zabytki.aggregate( {"$group" : {"_id" : "$voivodeship_name", "count" : {"$sum
     {
       "_id": "warmińsko-mazurskie",
       "count": 4072
-    },
-    {
-      "_id": "mazowieckie",
-      "count": 3919
-    },
-    {
-      "_id": "małopolskie",
-      "count": 3186
-    },
-    {
-      "_id": "lubuskie",
-      "count": 2989
-    },
-    {
-      "_id": "śląskie",
-      "count": 2643
-    },
-    {
-      "_id": "zachodniopomorskie",
-      "count": 2289
-    },
-    {
-      "_id": "podkarpackie",
-      "count": 2287
-    },
-    {
-      "_id": "opolskie",
-      "count": 2201
-    },
-    {
-      "_id": "pomorskie",
-      "count": 1833
-    },
-    {
-      "_id": "kujawsko-pomorskie",
-      "count": 1731
-    },
-    {
-      "_id": "łódzkie",
-      "count": 1690
-    },
-    {
-      "_id": "lubelskie",
-      "count": 1657
-    },
-    {
-      "_id": "podlaskie",
-      "count": 1451
-    },
-    {
-      "_id": "świętokrzyskie",
-      "count": 977
-    },
-    {
-      "_id": null,
-      "count": 18
     }
-
-```
+  ```
+  **Przedstawiony graficznie**
+  
+  ![wykres1](wykres1.png)
