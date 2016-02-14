@@ -124,5 +124,33 @@ db.zabytki.aggregate( {"$group" : {"_id" : "$voivodeship_name", "count" : {"$sum
   ![wykres1](wykres1.png)
 
 ------------------------------------------------------------------------------------------------------------
+**2. Wyświetlenie ilości zabtków według datowania roku budowy obiektów**
 
-2. 
+```sh
+db.zabytki.aggregate([ {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" : 1}}}, {"$sort":{"ilosc":-1}}, {"$limit" :100}])
+```
+
+**Wyniki**
+
+```sh
+{
+      "_id": "",
+      "ilosc": 7402
+    },
+    {
+      "_id": "XVIII",
+      "ilosc": 2106
+    },
+    {
+      "_id": "1 poł. XIX",
+      "ilosc": 1646
+    },
+    {
+      "_id": "2 poł. XIX",
+      "ilosc": 1587
+    },
+```
+
+**Przedstawienie pierwszyszych 100 wyników w fromie wykresu**
+![wykres2](wykres2.png)
+
