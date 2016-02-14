@@ -228,6 +228,7 @@ db.zabytki.aggregate({$match: { categories: 'sakralny'}},{"$group" : {"_id" : "s
 ```
 -------------------------------------------------------------------
 
+
 **Agregacja dotycząca wyświtlenia wszystkich zabytków powiązanych z ogrodami lub parkami**
 
 ```sh
@@ -248,6 +249,12 @@ db.zabytki.aggregate({$match: { categories: 'park_ogrod'}},{"$group" : {"_id" : 
 ---------------------------------------------------------------------------
 
 ###A więc w Polsce mamy około **10 tyś** obiektów powiązanych z tematyką sakralną oraz ponad **2 tyś** zabytków w postaci parków lub ogrodów.
-Mogło być więcej :)
+Mogło być więcej, być może baza danych nie jest kompletnie uzupełniona przez jej twórców :)
+
 
 =============================================================================
+
+
+##Powyższe agregacje wykonane w innym języku niż JavaScript.
+--------------------------------------------------------------
+Do wykonania tego zadania wykorzystałem język programowania PYTHON
