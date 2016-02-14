@@ -247,6 +247,7 @@ db.zabytki.aggregate({$match: { categories: 'park_ogrod'}},{"$group" : {"_id" : 
 ```
 ---------------------------------------------------------------------------
 
-###Ciekawe: A więc w Polsce mamy około **10 tyś** obiektów powiązanych z tematyką sakralną oraz ponad **2 tyś** zabytków w postaci parków lub ogrodów.
+###A więc w Polsce mamy około **10 tyś** obiektów powiązanych z tematyką sakralną oraz ponad **2 tyś** zabytków w postaci parków lub ogrodów.
+Mogło być więcej :)
 
 =============================================================================
