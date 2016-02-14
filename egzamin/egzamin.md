@@ -207,7 +207,7 @@ db.zabytki.aggregate([ {"$group" : {"_id" : "$categories", "ilosc" : {"$sum" : 1
 
 ------------------------------------------------------------------------------
 
-**4. Wyświetlenie ilości zabytków, których katergoria dotyczy obiektów sakralnych**
+**4. Wyświetlenie ilości zabytków powiązanych tematycznie z obiektami sakralnymi, parkami i ogrodami**
 
 ```sh
 db.zabytki.aggregate({$match: { categories: 'sakralny'}},{"$group" : {"_id" : "sakralny", "ilosc" : {"$sum" : 1}}})
@@ -226,6 +226,25 @@ db.zabytki.aggregate({$match: { categories: 'sakralny'}},{"$group" : {"_id" : "s
   "ok": 1
 }
 ```
-A więc w Polsce mamy około 10 tyś obiektów powiązanych z tematyką sakralną
+Agregacja dotycząca wyświtlenia wszystkich zabytków powiązanych z ogrodami lub parkami
+
+```sh
+db.zabytki.aggregate({$match: { categories: 'park_ogrod'}},{"$group" : {"_id" : "park_ogród", "ilosc" : {"$sum" : 1}}})
+
+```
+```sh
+{
+  "result": [
+    {
+      "_id": "park_ogród",
+      "ilosc": 2151
+    }
+  ],
+  "ok": 1
+}
+```
+
+
+Ciekawe: A więc w Polsce mamy około **10 tyś** obiektów powiązanych z tematyką sakralną oraz ponad **2 tyś** zabytków w postaci parków lub ogrodów.
 
 =============================================================================
