@@ -12,6 +12,7 @@ Wykorzystany sprzet:
 | Typ systemu           | 64 - bit                     |
 | Model komputera       | Ultrabook DELL XPS 14        |
 | MongoDB               | 3.0.7                        |
+| Python                | 2.7.6                        |
 
 **Zaimportowana baza [zabytki polski](http://otwartezabytki.pl/strony/pobierz-dane)**
 
