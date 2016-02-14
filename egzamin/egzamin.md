@@ -126,7 +126,7 @@ db.zabytki.aggregate( {"$group" : {"_id" : "$voivodeship_name", "count" : {"$sum
 ------------------------------------------------------------------------------------------------------------
 
 
-**2. Wyświetlenie ilości zabtków według datowania roku budowy obiektów**
+**2. Wyświetlenie ilości zabytków według datowania roku budowy obiektów**
 
 ```sh
 db.zabytki.aggregate([ {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" : 1}}}, {"$sort":{"ilosc":-1}}, {"$limit" :100}])
