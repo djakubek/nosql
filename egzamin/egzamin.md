@@ -101,7 +101,7 @@ db.zabytki.find().limit(1).skip(500)
 db.zabytki.aggregate( {"$group" : {"_id" : "$voivodeship_name", "count" : {"$sum" : 1}}}, {"$sort":{"count":-1}})
 ```
 
-**Wynik pierwszych trzech**
+**Wynik aggregacji**
 
 ```sh
 {
@@ -207,13 +207,13 @@ db.zabytki.aggregate([ {"$group" : {"_id" : "$categories", "ilosc" : {"$sum" : 1
 
 ------------------------------------------------------------------------------
 
-**4. Wyświetlenie ilości zabytków powiązanych tematycznie z obiektami sakralnymi, parkami i ogrodami**
+**4. Wyświetlenie ilości zabytków powiązanych tematycznie z obiektami sakralnymi oraz obiektów takich jak parki i ogrody**
 
 ```sh
 db.zabytki.aggregate({$match: { categories: 'sakralny'}},{"$group" : {"_id" : "sakralny", "ilosc" : {"$sum" : 1}}})
 ```
 
-**Wynik agregacji:**
+**Wynik agregacji obiektów sakralnych:**
 
 ```sh
 {
@@ -226,7 +226,9 @@ db.zabytki.aggregate({$match: { categories: 'sakralny'}},{"$group" : {"_id" : "s
   "ok": 1
 }
 ```
-Agregacja dotycząca wyświtlenia wszystkich zabytków powiązanych z ogrodami lub parkami
+-------------------------------------------------------------------
+
+**Agregacja dotycząca wyświtlenia wszystkich zabytków powiązanych z ogrodami lub parkami**
 
 ```sh
 db.zabytki.aggregate({$match: { categories: 'park_ogrod'}},{"$group" : {"_id" : "park_ogród", "ilosc" : {"$sum" : 1}}})
@@ -243,8 +245,8 @@ db.zabytki.aggregate({$match: { categories: 'park_ogrod'}},{"$group" : {"_id" : 
   "ok": 1
 }
 ```
+---------------------------------------------------------------------------
 
-
-Ciekawe: A więc w Polsce mamy około **10 tyś** obiektów powiązanych z tematyką sakralną oraz ponad **2 tyś** zabytków w postaci parków lub ogrodów.
+###Ciekawe: A więc w Polsce mamy około **10 tyś** obiektów powiązanych z tematyką sakralną oraz ponad **2 tyś** zabytków w postaci parków lub ogrodów.
 
 =============================================================================
