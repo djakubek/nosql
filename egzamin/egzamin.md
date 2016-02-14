@@ -287,7 +287,7 @@ for doc in zapytanie:
 
 **Wynik**
 
-![prt1.png)(prt1.png)
+![prt1.png](prt1.png)
 
 
 Widać że są pewne problemy z kodowaniem polskich znaków, nawet po dodaniu a na początku pliku odpowedniego kodowania.
@@ -318,7 +318,7 @@ for doc in zapytanie:
 
 **Wynik**
 
-![prt2.png)(prt2.png)
+![prt2.png](prt2.png)
 
 
 Agregacja3
@@ -347,7 +347,7 @@ for doc in zapytanie:
 
 **Wynik**
 
-![prt3.png)(prt3.png)
+![prt3.png](prt3.png)
 
 Agregacja4
 
@@ -374,7 +374,7 @@ for doc in zapytanie:
 
 **Wynik**
 
-![prt4.png)(prt4.png)
+![prt4.png](prt4.png)
 
 --------------------------------------------------------------------------------------
 
@@ -401,4 +401,4 @@ for doc in zapytanie:
 
 **Wynik**
 
-![prt5.png)(prt5.png)
+![prt5.png](prt5.png)
