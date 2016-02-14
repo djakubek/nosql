@@ -263,7 +263,8 @@ Mogło być więcej, być może baza danych nie jest kompletnie uzupełniona prz
 --------------------------------------------------------------
 Do wykonania tego zadania wykorzystałem język programowania PYTHON (2.7.6 )
 
-Agregacja 1 :
+**Agregacja 1 (Wyświetlenie ilości zabytków w poszczególnych województwach)**
+
 ```sh
 # -*- coding: utf-8 -*-
 import pymongo
@@ -291,8 +292,9 @@ for doc in zapytanie:
 
 
 Widać że są pewne problemy z kodowaniem polskich znaków, nawet po dodaniu a na początku pliku odpowedniego kodowania.
+
 ---------------------------------------------------
-Agregacja2 
+**Agregacja2 (Wyświetlenie ilości zabytków według datowania roku budowy obiektów)**
 
 ```sh
 # -*- coding: utf-8 -*-
@@ -321,7 +323,7 @@ for doc in zapytanie:
 ![prt2.png](prt2.png)
 
 
-Agregacja3
+**Agregacja3 (Wyświetlenie ilości zabytków według kategorii)**
 
 ```sh
 # -*- coding: utf-8 -*-
@@ -349,7 +351,7 @@ for doc in zapytanie:
 
 ![prt3.png](prt3.png)
 
-Agregacja4
+**Agregacja4 (Agregacja obiektów sakralnych)**
 
 ```sh
 # -*- coding: utf-8 -*-
@@ -377,6 +379,7 @@ for doc in zapytanie:
 ![prt4.png](prt4.png)
 
 --------------------------------------------------------------------------------------
+**Agregacja5 (Agregacja parków/ogrodów)**
 
 ```sh
 # -*- coding: utf-8 -*-
