@@ -252,6 +252,7 @@ db.zabytki.aggregate({$match: { categories: 'park_ogrod'}},{"$group" : {"_id" : 
 ---------------------------------------------------------------------------
 
 **A więc w Polsce mamy około 10 tyś obiektów powiązanych z tematyką sakralną oraz ponad 2 tyś zabytków w postaci parków lub ogrodów.**
+
 Mogło być więcej, być może baza danych nie jest kompletnie uzupełniona przez jej twórców :)
 
 
@@ -286,6 +287,8 @@ for doc in zapytanie:
 
 **Wynik**
 
+![prt1.png)(prt1.png)
+
 
 Widać że są pewne problemy z kodowaniem polskich znaków, nawet po dodaniu a na początku pliku odpowedniego kodowania.
 ---------------------------------------------------
@@ -313,7 +316,10 @@ for doc in zapytanie:
 
 ```
 
-Wynik
+**Wynik**
+
+![prt2.png)(prt2.png)
+
 
 Agregacja3
 
@@ -338,7 +344,10 @@ for doc in zapytanie:
    print(doc)
 
 ```
-Wynik
+
+**Wynik**
+
+![prt3.png)(prt3.png)
 
 Agregacja4
 
@@ -362,7 +371,10 @@ zapytanie = db.zabytki.aggregate(pipeline)
 for doc in zapytanie:
    print(doc)
 ```
-Wynik
+
+**Wynik**
+
+![prt4.png)(prt4.png)
 
 --------------------------------------------------------------------------------------
 
@@ -387,4 +399,6 @@ for doc in zapytanie:
    print(doc)
 ```
 
-Wynik
+**Wynik**
+
+![prt5.png)(prt5.png)
