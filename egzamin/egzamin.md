@@ -153,13 +153,57 @@ db.zabytki.aggregate([ {"$group" : {"_id" : "$dating_of_obj", "ilosc" : {"$sum" 
     },
 ```
 
-**Przedstawienie pierwszyszych 25 wyników w fromie wykresu**
+**Przedstawienie pierwszych 25 wyników w fromie wykresu**
 ![wykres2](wykres2.png)
 
 Jak widać jest sporo zabytków w Polsce, których data budowy nie jest oszacowana
 
 ---------------------------------------------------------------------------------------
-3.
+
+**3. Wyświetlenie ilości zabytków według kategorii**
+
+```sh
+db.zabytki.aggregate([ {"$group" : {"_id" : "$categories", "ilosc" : {"$sum" : 1}}}, {"$sort":{"ilosc":-1}}, {"$limit" :30}])
+```
+
+**Cztery pierwsze wyniki**
+```
+{
+  "result": [
+    {
+      "_id": [
+        "mieszkalny"
+      ],
+      "ilosc": 15009
+    },
+    {
+      "_id": [
+        "sakralny"
+      ],
+      "ilosc": 6733
+    },
+    {
+      "_id": [ ],
+      "ilosc": 6306
+    },
+    {
+      "_id": [
+        "dworski_palacowy_zamek"
+      ],
+      "ilosc": 4715
+    },
+    {
+      "_id": [
+        "park_ogrod",
+        "dworski_palacowy_zamek"
+      ],
+      "ilosc": 1275
+    },
+```
+**Przedstawienie pierwszych 25 wyników w fromie wykresu**
+
+
+![wykres3](wykres3.png)
 
 
 
