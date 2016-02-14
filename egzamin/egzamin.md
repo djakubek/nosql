@@ -122,3 +122,7 @@ db.zabytki.aggregate( {"$group" : {"_id" : "$voivodeship_name", "count" : {"$sum
   **Przedstawiony graficznie**
   
   ![wykres1](wykres1.png)
+
+------------------------------------------------------------------------------------------------------------
+
+2. 
