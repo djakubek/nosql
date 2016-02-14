@@ -101,7 +101,7 @@ db.zabytki.find().limit(1).skip(500)
 db.zabytki.aggregate( {"$group" : {"_id" : "$voivodeship_name", "count" : {"$sum" : 1}}}, {"$sort":{"count":-1}})
 ```
 
-**Wynik**
+**Wynik pierwszych trzech**
 
 ```sh
 {
